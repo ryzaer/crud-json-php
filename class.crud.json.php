@@ -16,7 +16,7 @@ class createJSON {
     private static $instance;
     private $maxData = 10000; /* 0/null for unlimited query */
     
-    public $filename = 'output.json';    
+    public $export = 'output.json';    
     public $initID;
     public $nextID;
     public $rmode = false;
@@ -267,7 +267,7 @@ class createJSON {
     }
 
     public function save($name=null){
-        $name = ($name)? $name : $this->filename;
+        $name = ($name)? $name : $this->export;
         file_put_contents($name, $this->text());
     }
 
