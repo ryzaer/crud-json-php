@@ -22,13 +22,12 @@ class createJSON {
     public $nextID;
     public $table;    
 
-    public static function params($string_json = null)
-	{
-		if (!isset(self::$instance)){
-			self::$instance = new createJSON($string_json);	
-		}		
-		return self::$instance;
-	}
+    public static function params($string_json = null){
+	if (!isset(self::$instance)){
+		self::$instance = new createJSON($string_json);	
+	}		
+	return self::$instance;
+    }
     
     public function __construct($json=null){          
         if($json)
