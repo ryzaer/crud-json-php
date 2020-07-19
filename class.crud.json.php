@@ -8,7 +8,7 @@
  * Date Created	: 13th, July 2020
  * Last Updated : 19th, July 2020
  * Support	: php > v5.4
- * License 	: GPL 
+ * License 	: MIT
  */ 
 
 class createJSON {   
