@@ -16,10 +16,10 @@ class createJSON {
     private static $instance;
     private $maxData = 10000; /* 0/null for unlimited query */
     
-    public $export = 'output.json';    
+    public $export = 'output.json'; 
+    public $rmode  = false;
     public $initID;
-    public $nextID;
-    public $rmode = false;
+    public $nextID;    
     public $table;    
 
     public static function params($string_json = null){
