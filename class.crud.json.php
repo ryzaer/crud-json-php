@@ -2,13 +2,13 @@
 
 /*
  * JSON Class CRUD PHP
- * Url 			: https://github.com/ryzaer/php-json-crud
- * Author		: Riza TTNT
- * Desc			: PHP Class for easy creating json & crud
- * Date Created : 13th, July 2020
+ * Url 		: https://github.com/ryzaer/php-json-crud
+ * Author	: Riza TTNT
+ * Desc		: PHP Class for easy creating json & crud
+ * Date Created	: 13th, July 2020
  * Last Updated : 15th, July 2020
- * Support		: php > v5.4
- * License 		: GPL 
+ * Support	: php > v5.4
+ * License 	: GPL 
  */ 
 
 class createJSON {   
