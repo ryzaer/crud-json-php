@@ -20,6 +20,7 @@ class createJSON {
     
     public $initID;
     public $nextID;
+    public $rmode = false;
     public $table;    
 
     public static function params($string_json = null){
@@ -124,6 +125,7 @@ class createJSON {
                 if(!is_numeric($val)) $rest[$val] = '';
             }
             $this->build_virtual_table([$rest]);
+	    $this->rmode = true;
         }
     }
 
@@ -156,6 +158,14 @@ class createJSON {
     }
 
     public function insert($data = []){
+
+	if($this->rmode){
+            $nrows =[];
+            for($n=0;$n<count($this->table);$n++){
+                $nrows[$this->table[$n]] = (isset($data[$n])? $data[$n] : '');
+            }
+            $data = $nrows;
+        }
 
         if(!$this->maxData){
             $maxdata = false;
