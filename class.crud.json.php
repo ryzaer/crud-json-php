@@ -6,7 +6,7 @@
  * Author	: Riza TTNT
  * Desc		: PHP Class for easy creating json & crud
  * Date Created	: 13th, July 2020
- * Last Updated : 15th, July 2020
+ * Last Updated : 19th, July 2020
  * Support	: php > v5.4
  * License 	: GPL 
  */ 
@@ -16,8 +16,7 @@ class createJSON {
     private static $instance;
     private $maxData = 10000; /* 0/null for unlimited query */
     
-    public $filename = 'output.json';
-    
+    public $filename = 'output.json';    
     public $initID;
     public $nextID;
     public $rmode = false;
