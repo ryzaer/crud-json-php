@@ -255,7 +255,7 @@ class createJSON {
             $query = [];
             foreach($this->query as $que => $row){  
                 if(isset($row[$this->initID])){
-                    if($row[$this->initID] !== $id) $query[] = $row;
+                    if($row[$this->initID] !== abs($id)) $query[] = $row;
                 }
             }
 
