@@ -156,7 +156,7 @@ class createJSON {
 
     public function insert($data = []){
 
-	if($this->rmode){
+	    if($this->rmode){
             $nrows =[];
             for($n=0;$n<count($this->table);$n++){
                 $nrows[$this->table[$n]] = (isset($data[$n])? $data[$n] : '');
